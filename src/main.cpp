@@ -9,9 +9,14 @@ class $modify(MenuLayer) {
             return false;
         }
 
-        // Use a simpler notification method to avoid the 'fmt' bug
-        auto notification = Notification::create("Mod Loaded!", NotificationIcon::Success);
-        notification->show();
+        // Using FLAlertLayer as a fallback if Notifications keep failing
+        // This is even more stable on Android
+        auto alert = FLAlertLayer::create(
+            "Mod Loaded", 
+            "Hello from <cl>Geode</c>!", 
+            "OK"
+        );
+        alert->show();
 
         return true;
     }

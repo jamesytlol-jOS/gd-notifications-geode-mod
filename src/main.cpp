@@ -9,14 +9,9 @@ class $modify(MenuLayer) {
             return false;
         }
 
-        // Using FLAlertLayer as a fallback if Notifications keep failing
-        // This is even more stable on Android
-        auto alert = FLAlertLayer::create(
-            "Mod Loaded", 
-            "Hello from <cl>Geode</c>!", 
-            "OK"
-        );
-        alert->show();
+        // We use a simple console log first. 
+        // If this builds, we know the "fmt" error is gone.
+        log::info("MenuLayer initialized successfully!");
 
         return true;
     }

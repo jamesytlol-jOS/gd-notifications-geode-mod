@@ -25,4 +25,6 @@ jobs:
       - name: Build Mod
         uses: geode-sdk/build-geode-mod@main
         with:
+          # This tells the script which version of the Geode SDK to use
+          sdk: v3.0.0-beta.1 
           target: ${{ matrix.config.target }}

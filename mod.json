@@ -1,11 +1,10 @@
 {
 	"geode": "3.0.0-beta.1",
 	"id": "yourname.testmod",
-	"version": "v0.5",
-	"name": "My First Mod",
-	"developer": "jamesytlol2nd and geminoid64",
-	"description": "This mod shows a notification when the game opens!(alpha test)",
-	"repository": "",
+	"version": "1.0.0",
+	"name": "Notifications",
+	"developer": "YourName",
+	"description": "alpha test: This mod shows a notification when the game opens!",
 	"resources": {
 		"files": []
 	}

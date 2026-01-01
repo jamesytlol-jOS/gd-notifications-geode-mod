@@ -15,6 +15,9 @@ jobs:
           - name: Android64
             os: ubuntu-latest
             target: Android64
+          - name: Android32
+            os: ubuntu-latest
+            target: Android32
 
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
@@ -25,6 +28,6 @@ jobs:
       - name: Build Mod
         uses: geode-sdk/build-geode-mod@main
         with:
-          # This tells the script which version of the Geode SDK to use
-          sdk: v3.0.0-beta.1 
+          sdk: v3.0.0-beta.1
           target: ${{ matrix.config.target }}
+          combine: true
